@@ -10,7 +10,7 @@ COPY . .
 WORKDIR /app/docker
 
 # Скопируйте и установите переменные окружения
-COPY .env.example .env
+RUN cp .env.example .env
 
 # Выполните команды для подготовки окружения
 RUN docker-compose pull
