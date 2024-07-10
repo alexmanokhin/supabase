@@ -7,7 +7,7 @@ WORKDIR /app
 # Скопируйте остальные файлы в рабочую директорию
 COPY . .
 
-RUN cd docker
+RUN cd docker/
 
 # Скопируйте и установите переменные окружения
 RUN cp .env.example .env
